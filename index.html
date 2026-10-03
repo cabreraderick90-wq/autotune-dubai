@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 <title>Auto Tune Service Centre L.L.C — Car Repair & Maintenance in Al Quoz, Dubai</title>
 <meta name="description" content="Auto Tune Service Centre L.L.C — trusted car repair, servicing and maintenance in Al Quoz, Dubai since 1992. Book online, get a quote per service. Oil change, diagnostics, AC, brakes, engine & gearbox. Call 056 285 7985.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +39,8 @@ a{color:inherit;text-decoration:none}
 header{position:sticky;top:0;z-index:100;background:rgba(11,13,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav{display:flex;align-items:center;justify-content:space-between;height:66px}
 .logo{display:flex;align-items:center;gap:10px;font-family:'Barlow Condensed';font-weight:700;font-size:22px;letter-spacing:1px}
-.logo .mark{width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,var(--red),var(--red-dk));display:grid;place-items:center;color:#fff;font-size:20px;font-weight:800}
+.logo .mark{width:42px;height:42px;border-radius:11px;background:#fff;display:grid;place-items:center;overflow:hidden;flex:none}
+.logo .mark img{width:100%;height:100%;object-fit:contain}
 .logo small{display:block;font-size:10px;color:var(--mut);letter-spacing:2px;font-family:'Inter';font-weight:500}
 .navlinks{display:flex;gap:26px;font-size:14px;font-weight:500;color:var(--mut)}
 .navlinks a:hover{color:var(--txt)}
@@ -97,6 +99,10 @@ nav{display:flex;align-items:center;justify-content:space-between;height:66px}
 .why h3{font-size:19px;margin-bottom:8px}
 .why p{color:var(--mut);font-size:13.5px}
 
+
+/* BRAND LOGO STRIP */
+.hero-card .brand{background:#fff;border-radius:var(--radius) var(--radius) 0 0;margin:-28px -28px 18px;padding:14px 18px;border-bottom:1px solid #eee}
+.hero-card .brand img{width:100%;max-width:230px;display:block;margin:0 auto}
 
 /* GALLERY */
 .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -170,7 +176,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:#0a0c0e}
   <div class="wrap">
     <nav>
       <a href="#top" class="logo">
-        <span class="mark">AT</span>
+        <span class="mark"><img src="images/logo-emblem.png" alt="Auto Tune emblem"></span>
         <span>Auto Tune<small>Service Centre L.L.C</small></span>
       </a>
       <div class="navlinks">
@@ -210,6 +216,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:#0a0c0e}
       </div>
     </div>
     <div class="hero-card">
+      <div class="brand"><img src="images/logo-art.png" alt="Auto Tune Service Centre logo"></div>
       <h3>Fast Quote / Booking</h3>
       <p class="p">Message us on WhatsApp and we'll reply with price &amp; timing.</p>
       <div class="quick">
@@ -463,7 +470,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:#0a0c0e}
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <a href="#top" class="logo"><span class="mark">AT</span><span>Auto Tune<small>Service Centre L.L.C</small></span></a>
+      <a href="#top" class="logo"><span class="mark"><img src="images/logo-emblem.png" alt="Auto Tune emblem"></span><span>Auto Tune<small>Service Centre L.L.C</small></span></a>
       <div class="foot-links">
         <a href="#services">Services &amp; Prices</a>
         <a href="#buy">Used Cars</a>
