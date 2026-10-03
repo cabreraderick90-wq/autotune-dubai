@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Tune Service Centre L.L.C — Car Repair & Maintenance in Al Quoz, Dubai</title>
+<meta name="description" content="Auto Tune Service Centre L.L.C — trusted car repair, servicing and maintenance in Al Quoz, Dubai since 1992. Book online, get a quote per service. Oil change, diagnostics, AC, brakes, engine & gearbox. Call 056 285 7985.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0d10;
+  --panel:#12151a;
+  --panel2:#171b21;
+  --line:#242a33;
+  --red:#e63946;
+  --red-dk:#c1121f;
+  --amber:#ffb703;
+  --txt:#eef1f5;
+  --mut:#9aa4b2;
+  --wa:#25d366;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+h1,h2,h3,.cond{font-family:'Barlow Condensed','Inter',sans-serif;letter-spacing:.5px;text-transform:uppercase}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.sec{padding:76px 0}
+.kicker{display:inline-block;color:var(--amber);font-weight:700;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px}
+.sec h2{font-size:clamp(30px,4.5vw,44px);line-height:1.1;margin-bottom:12px}
+.sec .sub{color:var(--mut);max-width:640px;margin-bottom:40px}
+
+/* NAV */
+header{position:sticky;top:0;z-index:100;background:rgba(11,13,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Barlow Condensed';font-weight:700;font-size:22px;letter-spacing:1px}
+.logo .mark{width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,var(--red),var(--red-dk));display:grid;place-items:center;color:#fff;font-size:20px;font-weight:800}
+.logo small{display:block;font-size:10px;color:var(--mut);letter-spacing:2px;font-family:'Inter';font-weight:500}
+.navlinks{display:flex;gap:26px;font-size:14px;font-weight:500;color:var(--mut)}
+.navlinks a:hover{color:var(--txt)}
+.nav-cta{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;border:0;transition:.2s;font-family:'Inter'}
+.btn-red{background:linear-gradient(135deg,var(--red),var(--red-dk));color:#fff}
+.btn-red:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(230,57,70,.35)}
+.btn-wa{background:var(--wa);color:#06220f}
+.btn-wa:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(37,211,102,.3)}
+.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--txt)}
+.btn-ghost:hover{border-color:var(--red)}
+.btn-sm{padding:9px 16px;font-size:13px;border-radius:8px}
+.hamburger{display:none;background:none;border:0;color:var(--txt);font-size:26px;cursor:pointer}
+
+/* HERO */
+.hero{position:relative;padding:90px 0 100px;background:
+  radial-gradient(900px 500px at 85% -10%,rgba(230,57,70,.16),transparent 60%),
+  radial-gradient(700px 400px at 0% 110%,rgba(255,183,3,.08),transparent 60%),
+  var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,183,3,.1);border:1px solid rgba(255,183,3,.35);color:var(--amber);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border-radius:999px;margin-bottom:22px}
+.hero h1{font-size:clamp(42px,6.5vw,72px);line-height:.98;margin-bottom:18px}
+.hero h1 .accent{color:var(--red)}
+.hero p.lead{color:var(--mut);font-size:17px;max-width:540px;margin-bottom:30px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.hero-stats{display:flex;gap:34px;flex-wrap:wrap}
+.stat .n{font-family:'Barlow Condensed';font-size:34px;font-weight:700;color:var(--txt)}
+.stat .n span{color:var(--red)}
+.stat .l{font-size:12px;color:var(--mut);letter-spacing:1px;text-transform:uppercase}
+.hero-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.hero-card h3{font-size:22px;margin-bottom:6px}
+.hero-card .p{color:var(--mut);font-size:13px;margin-bottom:18px}
+.quick{display:grid;gap:10px}
+.quick .row{display:flex;align-items:center;gap:12px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.quick .ic{width:36px;height:36px;border-radius:9px;background:rgba(37,211,102,.12);color:var(--wa);display:grid;place-items:center;flex-shrink:0}
+.quick b{font-size:14px;display:block}
+.quick small{color:var(--mut);font-size:12px}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.svc{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:.25s;display:flex;flex-direction:column}
+.svc:hover{transform:translateY(-4px);border-color:rgba(230,57,70,.5);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+.svc .ico{width:46px;height:46px;border-radius:11px;background:rgba(230,57,70,.12);display:grid;place-items:center;font-size:22px}
+.price-tag{background:rgba(255,183,3,.1);border:1px solid rgba(255,183,3,.3);color:var(--amber);font-size:13px;font-weight:700;padding:5px 11px;border-radius:999px;white-space:nowrap}
+.svc h3{font-size:20px;margin-bottom:6px}
+.svc p{color:var(--mut);font-size:13.5px;margin-bottom:18px;flex:1}
+.svc .acts{display:flex;gap:8px}
+.svc .acts .btn{flex:1;font-size:12.5px;padding:10px 8px}
+.price-note{margin-top:26px;text-align:center;color:var(--mut);font-size:13px}
+
+/* WHY */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.why{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.why .n{font-family:'Barlow Condensed';font-size:15px;font-weight:700;color:var(--red);letter-spacing:2px;margin-bottom:12px}
+.why h3{font-size:19px;margin-bottom:8px}
+.why p{color:var(--mut);font-size:13.5px}
+
+/* USED CARS */
+.buy-band{background:linear-gradient(135deg,rgba(230,57,70,.12),rgba(255,183,3,.06));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.buy-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.buy-list{display:grid;gap:12px;margin-top:22px}
+.buy-list li{list-style:none;display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:#c9d2dd}
+.buy-list .tick{color:var(--wa);font-weight:800}
+
+/* BOOKING */
+.book-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px}
+.info-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:30px;display:grid;gap:22px;align-content:start}
+.info-item{display:flex;gap:14px;align-items:flex-start}
+.info-item .ic{width:42px;height:42px;border-radius:10px;background:rgba(230,57,70,.12);color:var(--red);display:grid;place-items:center;flex-shrink:0;font-size:18px}
+.info-item b{display:block;font-size:15px;margin-bottom:2px}
+.info-item span{color:var(--mut);font-size:13.5px}
+.info-item a:hover{color:var(--red)}
+form.book{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:34px}
+form.book h3{font-size:24px;margin-bottom:4px}
+form.book .fp{color:var(--mut);font-size:13px;margin-bottom:22px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fg{margin-bottom:14px}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--mut);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:9px;color:var(--txt);padding:12px 14px;font-family:'Inter';font-size:14px;outline:none;transition:.2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--red)}
+.fg textarea{resize:vertical;min-height:90px}
+.form-msg{margin-top:12px;font-size:14px;display:none;padding:12px 14px;border-radius:9px}
+.form-msg.ok{display:block;background:rgba(37,211,102,.12);color:#5ee89b;border:1px solid rgba(37,211,102,.4)}
+.form-msg.err{display:block;background:rgba(230,57,70,.12);color:#ff8a94;border:1px solid rgba(230,57,70,.4)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:44px 0 30px;background:#0a0c0e}
+.foot-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}
+.foot-links{display:flex;gap:22px;font-size:13px;color:var(--mut)}
+.foot-links a:hover{color:var(--txt)}
+.copy{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);color:var(--mut);font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* FLOAT WHATSAPP */
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:200;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.45);transition:.2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+@media(max-width:900px){
+  .navlinks{display:none}
+  .hamburger{display:block}
+  .hero-grid,.book-grid,.buy-grid{grid-template-columns:1fr}
+  .nav-cta .btn-red{display:none}
+}
+@media(max-width:520px){
+  .frow{grid-template-columns:1fr}
+  .sec{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo">
+        <span class="mark">AT</span>
+        <span>Auto Tune<small>Service Centre L.L.C</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="#services">Services & Prices</a>
+        <a href="#buy">Used Cars</a>
+        <a href="#book">Book Now</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-wa btn-sm" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%27d%20like%20to%20book%20a%20service." target="_blank">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#06220f"><path d="M12 2a10 10 0 0 0-8.7 15l-1.2 4.4 4.5-1.2A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .7.5s.9 2.1.9 2.3c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.5.8 1 1.4 1.8 1.9.8.5 1.2.6 1.4.4l.9-1c.2-.3.4-.2.7-.1.2.1 1.9.9 2.2 1.1.3.2.5.2.6.4.1.1.1.8-.2 1.3z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn btn-red btn-sm" href="tel:+971562857985">056 285 7985</a>
+        <button class="hamburger" onclick="document.querySelector('.navlinks').style.display='block'">&#9776;</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge">&#9889; Serving Dubai since 1992</span>
+      <h1>Your Car, <span class="accent">Tuned Right.</span></h1>
+      <p class="lead">Auto Tune Service Centre L.L.C — professional car repair and maintenance in Al Quoz, Dubai. Honest diagnosis, quality parts, fair prices. Get a quote per service and book in under a minute.</p>
+      <div class="hero-btns">
+        <a href="#book" class="btn btn-red">Book a Service</a>
+        <a href="#services" class="btn btn-ghost">See Service Prices</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="n">30<span>+</span></div><div class="l">Years in Dubai</div></div>
+        <div class="stat"><div class="n">All<span> Makes</span></div><div class="l">Japanese, Korean, European, American</div></div>
+        <div class="stat"><div class="n">Free</div><div class="l">Pick-up &amp; Delivery*</div></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Fast Quote / Booking</h3>
+      <p class="p">Message us on WhatsApp and we'll reply with price &amp; timing.</p>
+      <div class="quick">
+        <a class="row" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%20need%20a%20quote%20for%20a%20service." target="_blank">
+          <span class="ic">&#128172;</span>
+          <span><b>Chat on WhatsApp</b><small>Send photos of the issue</small></span>
+        </a>
+        <a class="row" href="tel:+971562857985">
+          <span class="ic">&#128222;</span>
+          <span><b>Call 056 285 7985</b><small>Mon–Sat, 07:00–19:00</small></span>
+        </a>
+        <a class="row" href="https://maps.google.com/?q=Auto+Tune+Service+Centre+WH+15+29th+St+Al+Quoz+Industrial+4+Dubai" target="_blank">
+          <span class="ic">&#128663;</span>
+          <span><b>WH 15, 29th St, Al Quoz Ind. 4</b><small>Get directions &#8599;</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <span class="kicker">Transparent Pricing</span>
+    <h2>Services &amp; Starting Prices</h2>
+    <p class="sub">Every job is quoted before we start — the prices below are starting points for standard vehicles. Tap <b>Get Quote</b> on any service for an exact price for your car.</p>
+
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#128295;</span><span class="price-tag">from AED 149</span></div>
+        <h3>Oil Change &amp; Full Service</h3>
+        <p>Engine oil &amp; filter change, 30-point inspection, fluid top-up. Genuine and quality aftermarket oils for all makes.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%27d%20like%20a%20quote%20for%20Oil%20Change%20%26%20Full%20Service." target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#128269;</span><span class="price-tag">from AED 100</span></div>
+        <h3>Computer Diagnostics</h3>
+        <p>Check-engine light, sensors and electrical faults scanned with professional tools. Diagnosis before you spend on repairs.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%20have%20a%20warning%20light%20%2F%20fault.%20Can%20I%20get%20a%20diagnostics%20quote%3F" target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#128663;</span><span class="price-tag">from AED 250</span></div>
+        <h3>Brake Service</h3>
+        <p>Brake pads, discs, brake fluid and full system checks. Grinding, squealing or a soft pedal — we sort it safely.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%27d%20like%20a%20quote%20for%20brake%20service." target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#10052;</span><span class="price-tag">from AED 199</span></div>
+        <h3>AC Repair &amp; Re-gas</h3>
+        <p>Weak cooling, bad smells, AC gas top-up, compressor and leak repair. Full AC service for Dubai summers.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20my%20AC%20is%20not%20cooling.%20Can%20I%20get%20a%20quote%3F" target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#9881;</span><span class="price-tag">on inspection</span></div>
+        <h3>Engine Repair</h3>
+        <p>Overheating, smoke, timing belts, gaskets and major engine work. Quoted per job after inspection — no surprises.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%20have%20an%20engine%20issue.%20Can%20I%20book%20an%20inspection%3F" target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#9851;</span><span class="price-tag">on inspection</span></div>
+        <h3>Gearbox &amp; Transmission</h3>
+        <p>Automatic and manual gearbox repair, CVT and DSG service, clutch replacement. Honest advice on repair vs replace.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%20have%20a%20gearbox%20%2F%20transmission%20issue.%20Can%20I%20get%20a%20quote%3F" target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#127968;</span><span class="price-tag">from AED 150</span></div>
+        <h3>Suspension &amp; Alignment</h3>
+        <p>Shock absorbers, control arms, bushings, wheel alignment and balancing. Stop the rattles and uneven tyre wear.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%27d%20like%20a%20quote%20for%20suspension%20%2F%20alignment." target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#128267;</span><span class="price-tag">from AED 250</span></div>
+        <h3>Battery &amp; Electrical</h3>
+        <p>Battery testing and replacement, alternators, starters, wiring and lights. Free battery check with any service.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%20need%20a%20battery%20%2F%20electrical%20quote." target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#128664;</span><span class="price-tag">from AED 100</span></div>
+        <h3>Tyres, Puncture &amp; Balancing</h3>
+        <p>New tyres, fitting, balancing, rotation and puncture repair for all sizes, including run-flats.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%27d%20like%20a%20tyre%20quote%20(size%3A%20___)." target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#128308;</span><span class="price-tag">from AED 300</span></div>
+        <h3>Window Tinting</h3>
+        <p>Professional car window tinting with quality film. Heat rejection and privacy, done in-house in Al Quoz.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%27d%20like%20a%20window%20tinting%20quote." target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#128203;</span><span class="price-tag">from AED 200</span></div>
+        <h3>Pre-Purchase Inspection</h3>
+        <p>Buying a used car in Dubai? Full mechanical and electrical inspection with a written report before you pay.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%27m%20buying%20a%20used%20car%20and%20need%20a%20pre-purchase%20inspection." target="_blank">Get Quote</a><a class="btn btn-ghost" href="#book">Book</a></div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-top"><span class="ico">&#128176;</span><span class="price-tag">instant cash</span></div>
+        <h3>We Buy Used Cars</h3>
+        <p>Selling your car? We buy used vehicles for instant cash, and we stock quality pre-owned cars with bank financing.</p>
+        <div class="acts"><a class="btn btn-wa" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%20want%20to%20sell%20my%20car.%20Details%3A%20make%2Fmodel%2Fyear%2Fkm%3A%20___" target="_blank">Get an Offer</a><a class="btn btn-ghost" href="#buy">Details</a></div>
+      </div>
+    </div>
+
+    <p class="price-note">* Prices are starting prices for standard vehicles and include labour unless stated. Final quote always confirmed before work begins. Free pick-up &amp; delivery available within Dubai (conditions apply).</p>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="sec" id="why" style="padding-top:0">
+  <div class="wrap">
+    <span class="kicker">Why Auto Tune</span>
+    <h2>A Garage Dubai Has Trusted Since 1992</h2>
+    <p class="sub">Thirty-plus years in Al Quoz means we've seen every car, every fault, and every "quick fix" that wasn't. We do it properly, the first time.</p>
+    <div class="why-grid">
+      <div class="why"><div class="n">01</div><h3>Fixed Before We Start</h3><p>You approve the quote before any wrench turns. No work, no charge you didn't agree to.</p></div>
+      <div class="why"><div class="n">02</div><h3>All Makes Welcome</h3><p>Japanese, Korean, American and European — our team handles every brand with the right parts.</p></div>
+      <div class="why"><div class="n">03</div><h3>Free Pick-Up &amp; Delivery</h3><p>Busy day? We collect your car, service it, and bring it back. Anywhere in Dubai.</p></div>
+      <div class="why"><div class="n">04</div><h3>Real Mechanics</h3><p>Experienced technicians, honest diagnosis, and quality parts — since 1992.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USED CARS ============ -->
+<section class="sec buy-band" id="buy">
+  <div class="wrap buy-grid">
+    <div>
+      <span class="kicker">Instant Cash &amp; Financing</span>
+      <h2>Buying or Selling a Used Car?</h2>
+      <ul class="buy-list">
+        <li><span class="tick">&#10003;</span><span><b>Sell us your car</b> — instant cash offer, quick paperwork, same-day payment.</span></li>
+        <li><span class="tick">&#10003;</span><span><b>Quality pre-owned cars in stock</b> — inspected and serviced before sale.</span></li>
+        <li><span class="tick">&#10003;</span><span><b>Bank financing available</b> — we help you arrange it.</span></li>
+        <li><span class="tick">&#10003;</span><span><b>Trade-ins accepted</b> — upgrading? Put your current car towards the next one.</span></li>
+      </ul>
+      <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-red" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%20want%20to%20sell%20my%20car%20(make%2Fmodel%2Fyear%2Fkm%3A%20___)." target="_blank">Sell My Car</a>
+        <a class="btn btn-ghost" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20what%20used%20cars%20do%20you%20have%20in%20stock%3F" target="_blank">See Stock</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>How It Works</h3>
+      <p class="p">From first message to cash in hand, usually within a day.</p>
+      <div class="quick">
+        <div class="row"><span class="ic">1</span><span><b>Send details &amp; photos</b><small>Make, model, year, kilometres</small></span></div>
+        <div class="row"><span class="ic">2</span><span><b>Get an instant offer</b><small>We value it and confirm the price</small></span></div>
+        <div class="row"><span class="ic">3</span><span><b>Inspection &amp; payment</b><small>Quick check, paperwork, cash paid</small></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="sec" id="book">
+  <div class="wrap">
+    <span class="kicker">Book or Inquire</span>
+    <h2>Book Your Service</h2>
+    <p class="sub">Fill in the form and we'll confirm your slot and quote by phone or WhatsApp. Prefer WhatsApp? <a href="https://wa.me/971562857985" target="_blank" style="color:var(--wa);font-weight:600">Message us here</a>.</p>
+
+    <div class="book-grid">
+      <div class="info-card" id="contact">
+        <div class="info-item"><span class="ic">&#128205;</span><span><b>Visit the Workshop</b><span>WH 15 - 29th St - Al Quoz Industrial 4<br>Al Quoz, Dubai, UAE<br><a href="https://maps.google.com/?q=Auto+Tune+Service+Centre+WH+15+29th+St+Al+Quoz+Industrial+4+Dubai" target="_blank">Get directions &#8599;</a></span></span></div>
+        <div class="info-item"><span class="ic">&#128222;</span><span><b>Call / WhatsApp</b><span><a href="tel:+971562857985">056 285 7985</a><br><a href="https://wa.me/971562857985" target="_blank">Chat on WhatsApp &#8599;</a></span></span></div>
+        <div class="info-item"><span class="ic">&#128337;</span><span><b>Opening Hours</b><span>Mon–Sat: 07:00 – 19:00<br>Sunday: closed</span></span></div>
+        <div class="info-item"><span class="ic">&#128247;</span><span><b>Follow Us</b><span><a href="https://www.instagram.com/autotunedubai/" target="_blank">@autotunedubai on Instagram &#8599;</a></span></span></div>
+      </div>
+
+      <form class="book" id="bookForm" action="https://formsubmit.co/dcabrera70074@gmail.com" method="POST">
+        <h3>Service Booking Form</h3>
+        <p class="fp">We reply within working hours, usually the same day.</p>
+        <input type="hidden" name="_subject" value="New Booking / Inquiry — Auto Tune Website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="">
+        <div class="frow">
+          <div class="fg"><label>Full Name *</label><input type="text" name="name" required placeholder="Your name"></div>
+          <div class="fg"><label>Phone / WhatsApp *</label><input type="tel" name="phone" required placeholder="+971 5X XXX XXXX"></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label>Car Make &amp; Model *</label><input type="text" name="car" required placeholder="e.g. Nissan Altima 2018"></div>
+          <div class="fg"><label>Service Needed *</label>
+            <select name="service" required>
+              <option value="">Select a service…</option>
+              <option>Oil Change &amp; Full Service</option>
+              <option>Computer Diagnostics</option>
+              <option>Brake Service</option>
+              <option>AC Repair &amp; Re-gas</option>
+              <option>Engine Repair</option>
+              <option>Gearbox &amp; Transmission</option>
+              <option>Suspension &amp; Alignment</option>
+              <option>Battery &amp; Electrical</option>
+              <option>Tyres &amp; Balancing</option>
+              <option>Window Tinting</option>
+              <option>Pre-Purchase Inspection</option>
+              <option>Sell My Car / Used Car Purchase</option>
+              <option>Other (describe below)</option>
+            </select>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label>Preferred Date</label><input type="date" name="date"></div>
+          <div class="fg"><label>Preferred Time</label>
+            <select name="time">
+              <option value="">Any time</option>
+              <option>Morning (07:00–11:00)</option>
+              <option>Midday (11:00–15:00)</option>
+              <option>Afternoon (15:00–19:00)</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg"><label>Describe the issue / message</label><textarea name="message" placeholder="Tell us what's happening with the car, or ask for a quote…"></textarea></div>
+        <button type="submit" class="btn btn-red" style="width:100%;margin-top:8px">Send Booking Request &#8594;</button>
+        <div class="form-msg" id="fmsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a href="#top" class="logo"><span class="mark">AT</span><span>Auto Tune<small>Service Centre L.L.C</small></span></a>
+      <div class="foot-links">
+        <a href="#services">Services &amp; Prices</a>
+        <a href="#buy">Used Cars</a>
+        <a href="#book">Book Now</a>
+        <a href="https://www.instagram.com/autotunedubai/" target="_blank">Instagram</a>
+      </div>
+      <a class="btn btn-red btn-sm" href="tel:+971562857985">Call 056 285 7985</a>
+    </div>
+    <div class="copy">
+      <span>&copy; 2026 Auto Tune Service Centre L.L.C — WH 15, 29th St, Al Quoz Industrial 4, Dubai, UAE</span>
+      <span>Car repair &amp; maintenance in Dubai since 1992</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOAT WHATSAPP -->
+<a class="wa-float" href="https://wa.me/971562857985?text=Hi%20Auto%20Tune%2C%20I%27d%20like%20a%20quote%20%2F%20booking." target="_blank" aria-label="WhatsApp us">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.7 15l-1.2 4.4 4.5-1.2A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .7.5s.9 2.1.9 2.3c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.5.8 1 1.4 1.8 1.9.8.5 1.2.6 1.4.4l.9-1c.2-.3.4-.2.7-.1.2.1 1.9.9 2.2 1.1.3.2.5.2.6.4.1.1.1.8-.2 1.3z"/></svg>
+</a>
+
+<script>
+// booking form: send via FormSubmit AJAX so user stays on page
+document.getElementById('bookForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+  var form = e.target, msg = document.getElementById('fmsg');
+  var btn = form.querySelector('button[type=submit]');
+  var data = Object.fromEntries(new FormData(form).entries());
+  if(!data.name || !data.phone || !data.car || !data.service){
+    msg.className = 'form-msg err'; msg.textContent = 'Please fill in your name, phone, car and service.'; return;
+  }
+  btn.disabled = true; btn.textContent = 'Sending…';
+  try{
+    var res = await fetch('https://formsubmit.co/ajax/dcabrera70074@gmail.com', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify(Object.assign(data, {
+        _subject:'New Booking / Inquiry — Auto Tune Website',
+        _template:'table'
+      }))
+    });
+    if(res.ok){
+      msg.className='form-msg ok';
+      msg.textContent='✅ Booking request sent! Auto Tune will confirm your slot shortly. For urgent bookings, WhatsApp 056 285 7985.';
+      form.reset();
+    } else throw 0;
+  }catch(err){
+    msg.className='form-msg err';
+    msg.textContent='Could not send right now. Please WhatsApp or call 056 285 7985.';
+  }
+  btn.disabled=false; btn.textContent='Send Booking Request →';
+});
+</script>
+</body>
+</html>
