@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Photos: Ivan Radic, CC BY 2.0 (flickr.com/photos/26344495@N05) via Openverse. Placeholder images - replace with client photos before go-live. -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -96,6 +97,20 @@ nav{display:flex;align-items:center;justify-content:space-between;height:66px}
 .why h3{font-size:19px;margin-bottom:8px}
 .why p{color:var(--mut);font-size:13.5px}
 
+
+/* GALLERY */
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:var(--panel)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.gal:hover img{transform:scale(1.06)}
+.gal .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:13px;font-weight:600;opacity:0;transition:.3s}
+.gal:hover .cap{opacity:1}
+.gal-cta{margin-top:26px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px 26px}
+.gal-cta p{color:var(--mut);font-size:14px}
+.gal-cta b{color:var(--txt)}
+@media(max-width:760px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.gal-grid{grid-template-columns:1fr}}
+
 /* USED CARS */
 .buy-band{background:linear-gradient(135deg,rgba(230,57,70,.12),rgba(255,183,3,.06));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .buy-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
@@ -160,6 +175,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:#0a0c0e}
       </a>
       <div class="navlinks">
         <a href="#services">Services & Prices</a>
+        <a href="#work">Recent Work</a>
         <a href="#buy">Used Cars</a>
         <a href="#book">Book Now</a>
         <a href="#contact">Contact</a>
@@ -322,6 +338,28 @@ footer{border-top:1px solid var(--line);padding:44px 0 30px;background:#0a0c0e}
       <div class="why"><div class="n">02</div><h3>All Makes Welcome</h3><p>Japanese, Korean, American and European — our team handles every brand with the right parts.</p></div>
       <div class="why"><div class="n">03</div><h3>Free Pick-Up &amp; Delivery</h3><p>Busy day? We collect your car, service it, and bring it back. Anywhere in Dubai.</p></div>
       <div class="why"><div class="n">04</div><h3>Real Mechanics</h3><p>Experienced technicians, honest diagnosis, and quality parts — since 1992.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ GALLERY ============ -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <span class="kicker">Inside Our Workshop</span>
+    <h2>Recent Work</h2>
+    <p class="sub">Real jobs from the garage floor in Al Quoz — diagnostics, engine work, brakes, tyres and more. Follow us on Instagram for daily updates.</p>
+    <div class="gal-grid">
+      <div class="gal"><img src="images/work-1.jpg" alt="Mechanic working on an engine" loading="lazy"><span class="cap">Engine &amp; mechanical work</span></div>
+      <div class="gal"><img src="images/work-2.jpg" alt="Mechanic running a car diagnostic test on a laptop" loading="lazy"><span class="cap">Computer diagnostics</span></div>
+      <div class="gal"><img src="images/work-3.jpg" alt="Tire technician changing a wheel" loading="lazy"><span class="cap">Tyre change &amp; fitting</span></div>
+      <div class="gal"><img src="images/work-4.jpg" alt="Mechanic servicing a car engine" loading="lazy"><span class="cap">Full servicing</span></div>
+      <div class="gal"><img src="images/work-5.jpg" alt="Checking air pressure in a car tyre" loading="lazy"><span class="cap">Tyre pressure check</span></div>
+      <div class="gal"><img src="images/work-6.jpg" alt="Tire technician using an impact wrench" loading="lazy"><span class="cap">Wheel service</span></div>
+    </div>
+    <div class="gal-cta">
+      <p><b>See more on Instagram</b> — daily posts from the workshop: <a href="https://www.instagram.com/autotunedubai/" target="_blank" style="color:var(--amber)">@autotunedubai</a></p>
+      <a class="btn btn-ghost" href="https://www.instagram.com/autotunedubai/" target="_blank">Follow on Instagram &#8599;</a>
     </div>
   </div>
 </section>
